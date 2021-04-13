@@ -1,5 +1,5 @@
 <template>
-    <div class="articles">
+    <div class="article-view">
 
     </div>
 </template>
