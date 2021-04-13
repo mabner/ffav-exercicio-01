@@ -4,6 +4,7 @@
 			<Header class="header" title="FFAV - Exercício 1" />
 			<NavMenu :items="menuItems" />
 			<Articles :articles="articles" />
+      <Sidebar :sidebarMenu="sidebar" />
 		</div>
 	</div>
 </template>
@@ -12,6 +13,7 @@
 	import Header from './components/Header';
 	import NavMenu from './components/NavMenu';
 	import Articles from './components/Articles';
+  import Sidebar from './components/Sidebar';
 
 	export default {
 		name: 'App',
@@ -19,15 +21,14 @@
 			Header,
 			NavMenu,
 			Articles,
+      Sidebar,
 		},
 		data() {
 			return {
 				menuItems: [
-					{ text: 'Core Docs', link: 'https://vuejs.org' },
-					{ text: 'Forum', link: 'https://forum.vuejs.org' },
-					{ text: 'Community', link: 'https://chat.vuejs.org' },
-					{ text: 'Twitter', link: 'https://twitter.com/vuejs' },
-					{ text: 'News', link: 'https://news.vuejs.org' },
+					{ text: 'Intro to Vue course', link: 'https://www.vuemastery.com/courses/intro-to-vue-js/vue-instance/' },
+					{ text: 'Get Started', link: 'https://vuejs.org/v2/guide/' },
+					{ text: 'GitHub', link: 'https://github.com/vuejs/vue' },
 				],
 				articles: [
 					{
@@ -43,6 +44,13 @@
 						text: '20KB min+gzip Runtime. Blazing Fast Virtual DOM. Minimal Optimization Efforts',
 					},
 				],
+        sidebar: [
+          { text: 'Core Docs', link: 'https://vuejs.org' },
+					{ text: 'Forum', link: 'https://forum.vuejs.org' },
+					{ text: 'Community', link: 'https://chat.vuejs.org' },
+					{ text: 'Twitter', link: 'https://twitter.com/vuejs' },
+					{ text: 'News', link: 'https://news.vuejs.org' },
+        ],
 			};
 		},
 	};

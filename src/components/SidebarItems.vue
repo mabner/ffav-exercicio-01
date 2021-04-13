@@ -1,15 +1,13 @@
 <template>
-    <div class="header">
-
-    </div>
+	<a :href="sidebar.link">{{ sidebar.text }}</a>
 </template>
 
 <script>
-export default {
-
-}
+	export default {
+		props: {
+			sidebar: Object,
+		},
+	};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
