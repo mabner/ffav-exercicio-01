@@ -1,9 +1,9 @@
 <template>
 	<div id="app" class="grid">
-			<Header class="header" title="FFAV - Exercício 1" />
-			<NavMenu :items="menuItems" />
-			<Sidebar :sidebarMenu="sidebar" />
-			<Articles :articles="articles" />
+		<Header class="header" title="FFAV - Exercício 1" />
+		<NavMenu :items="menuItems" />
+		<Sidebar :sidebarMenu="sidebar" />
+		<Articles :articles="articles" />
 	</div>
 </template>
 
@@ -62,6 +62,18 @@
 </script>
 
 <style>
+	* {
+		text-decoration: none;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+	.li-menu {
+		display: inline;
+		color: #fff;
+		text-decoration: none;
+		padding: 4px 4px 4px;
+	}
 	#app {
 		font-family: Avenir, Helvetica, Arial, sans-serif;
 		-webkit-font-smoothing: antialiased;
@@ -83,12 +95,15 @@
 		grid-area: sidebar;
 	}
 	.grid {
+		margin: 0px;
 		display: grid;
 		grid-template-columns: 1fr 0.2fr;
+		grid-template-rows: auto auto 1fr;
 		grid-template-areas:
 			'header header'
 			'navmenu navmenu'
 			'article sidebar';
 		grid-gap: 1rem;
+		height: 100vh;
 	}
 </style>

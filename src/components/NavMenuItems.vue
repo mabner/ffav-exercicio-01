@@ -1,5 +1,5 @@
 <template>
-	<li>
+	<li class="li-menu">
 		<a :href="item.link">{{ item.text }}</a>
 	</li>
 </template>
@@ -13,4 +13,4 @@
 	};
 </script>
 
-<style scoped></style>
+<style></style>

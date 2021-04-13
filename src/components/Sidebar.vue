@@ -16,4 +16,16 @@
 	};
 </script>
 
-<style scoped></style>
+<style>
+	.sidebar a {
+		display: block;
+		color: #fff;
+		padding: 10px;
+	}
+	.sidebar a:hover {
+		color: #42b983;
+	}
+	.sidebar {
+		background: #35495e;
+	}
+</style>

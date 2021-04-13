@@ -21,4 +21,15 @@
 	};
 </script>
 
-<style scoped></style>
+<style>
+	.navmenu {
+		background: #35495e;
+		color: #fff;
+	}
+	.navmenu a {
+		color: #fff;
+	}
+	.navmenu a:hover {
+		color: #42b983;
+	}
+</style>

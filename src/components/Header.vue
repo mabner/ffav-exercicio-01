@@ -15,4 +15,9 @@
 	};
 </script>
 
-<style scoped></style>
+<style>
+	.header {
+		background: #42b983;
+		color: #fff;
+	}
+</style>
