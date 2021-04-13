@@ -1,15 +1,20 @@
 <template>
-    <div class="articles">
-
-    </div>
+	<div class="articles">
+		<ArticleItems v-for="item in articles" :key="item" :article="item" />
+	</div>
 </template>
 
 <script>
-export default {
+	import ArticleItems from './ArticleItems';
 
-}
+	export default {
+		components: {
+			ArticleItems,
+		},
+		props: {
+			articles: Array,
+		},
+	};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
