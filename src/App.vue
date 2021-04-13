@@ -1,11 +1,9 @@
 <template>
 	<div id="app" class="grid">
-		<div class="main">
 			<Header class="header" title="FFAV - Exercício 1" />
 			<NavMenu :items="menuItems" />
 			<Sidebar :sidebarMenu="sidebar" />
 			<Articles :articles="articles" />
-		</div>
 	</div>
 </template>
 
@@ -78,19 +76,19 @@
 	.navmenu {
 		grid-area: navmenu;
 	}
-	.articles {
-		grid-area: articles;
+	.article {
+		grid-area: article;
 	}
 	.sidebar {
 		grid-area: sidebar;
 	}
 	.grid {
 		display: grid;
-		grid-template-columns: 1fr 18px;
+		grid-template-columns: 1fr 0.2fr;
 		grid-template-areas:
 			'header header'
 			'navmenu navmenu'
-			'articles sidebar';
+			'article sidebar';
 		grid-gap: 1rem;
 	}
 </style>
