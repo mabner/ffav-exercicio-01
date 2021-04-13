@@ -1,13 +1,11 @@
 <template>
-	<nav>
-		<ul>
-			<NavMenuItems
-				v-for="item in items"
-				:key="item"
-				:item="item"
-			/>
-		</ul>
-	</nav>
+	<div class="navmenu">
+		<nav>
+			<ul>
+				<NavMenuItems v-for="item in items" :key="item" :item="item" />
+			</ul>
+		</nav>
+	</div>
 </template>
 
 <script>
